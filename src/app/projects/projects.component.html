@@ -1,0 +1,15 @@
+<div class="card">
+    <ul class="list-group list-group-flush" *ngFor="let x of projects">
+        <li id="title-li" class="list-group-item"><b>{{x.fields.title}}</b>
+        </li>
+        <li class="list-group-item">
+            <pre style="white-space:pre-wrap; overflow-x:hidden; overflow-x:hidden;
+            font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+          " [innerHtml]="_returnHtmlFromRichText(x.fields.summary)">
+               {{x.fields.summary}}
+               </pre>
+
+        </li>
+
+    </ul>
+</div>

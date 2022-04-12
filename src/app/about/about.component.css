@@ -1,0 +1,44 @@
+.card ul li img {
+    max-width: 25px;
+    margin-right: 5px;
+}
+
+.card ul div ul {
+    list-style-type: circle;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.list-group list-group-flush {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+#title-li {
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+li {
+    border: 0;
+
+
+}
+
+.card {
+    border-radius: 0;
+    margin-bottom: 30px;
+    border: 0;
+}
+
+.card .text {
+    white-space: pre-wrap;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}

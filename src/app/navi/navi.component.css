@@ -1,0 +1,13 @@
+.navbar-nav a.active {
+    color: black;
+    font-weight: bold;
+
+}
+
+.navbar {
+    font-weight: 600;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    position: sticky;
+}

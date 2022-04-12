@@ -1,0 +1,57 @@
+.card .back-arrow {
+    position: relative;
+    text-decoration: none;
+
+    top: 10px;
+    left: 20px;
+}
+
+.card .text {
+    margin-top: 50px;
+    white-space: pre-wrap;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: -0.003em;
+    color: rgba(0, 0, 0, .8);
+}
+
+.card-body small p {
+    margin-top: 20px;
+}
+
+.card img {
+    min-height: 300px;
+
+
+}
+
+.card {
+    padding: 0;
+    margin: 0;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    border: 0;
+
+
+}
+
+.summery-p {
+
+    text-decoration: none;
+    color: black;
+}
+
+.summery-p:hover {
+    text-decoration: underline;
+}
+
+.disqus {
+    width: 100%;
+    background-color: white;
+}
+
+.disqus {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,18 @@
+<div class="card" style="width: 100%;" *ngFor="let x of post">
+    <a routerLink="/article/{{x.sys.id}}">
+        <img src="{{x.fields.postImage.fields.file.url}}" width="100%" height="100%">
+
+    </a>
+    <div class="card-body ">
+        <a routerLink="/article/{{x.sys.id}}">
+            <h3 class="card-title mb-3 mt-1">{{x.fields.title}} </h3>
+        </a>
+        <a routerLink="/article/{{x.sys.id}}">
+            <p>{{x.fields.description}}</p>
+        </a>
+        <small>
+            <b>{{x.fields.date | date:'M/d/yyyy'}}</b>
+        </small>
+
+    </div>
+</div>

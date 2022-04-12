@@ -1,0 +1,13 @@
+#myfooter {
+
+    bottom: 0 !important;
+    width: 100%;
+    background: #161616;
+    padding: 3rem 1.5rem 6rem;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 5%;
+
+}

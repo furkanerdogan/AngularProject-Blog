@@ -1,0 +1,123 @@
+<div class="row" *ngFor="let x of greeting">
+    <div class="up-side" style="border-radius: 5px;">
+        <div class="profile-background" style="border-radius: 5px 5px 0px 0px;">
+
+        </div>
+        <div class="profile-photo">
+            <div class="p-image">
+                <img src="../../../assets/pic/furkan2.jfif" />
+            </div>
+            <div class="profil-content">
+                <h3> {{x.fields.greetingTitle}}</h3>
+                <h6>{{x.fields.greetingTitle2}}</h6>
+                <p>{{x.fields.greetingSummary}}</p>
+
+
+                <div class="social-medias">
+                    <a href="https://github.com/furkanerdogan"> <img src="../../../assets/pic/github.png" /></a>
+                    <a href="https://www.instagram.com/furkanerdgn1/"> <img
+                            src="../../../assets/pic/instagram.png" /></a>
+                    <a href="https://www.linkedin.com/in/furkan-erdoğann/"> <img
+                            src="../../../assets/pic/linkedin-logo.png" /></a>
+                    <a href="mailto: furkanerdogan.muh@gmail.com"><img src="../../../assets/pic/email.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down-side">
+        <ul>
+            <li *ngFor="let y of greeting_downSide"><img src="{{y.fields.icon.fields.file.url}}" />{{y.fields.text}}
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<style>
+    .profil-content {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .profil-content p {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        position: relative;
+    }
+
+    .profile-photo .p-image img {
+        position: relative;
+        bottom: 40px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover
+    }
+
+    .profile-photo img {
+        max-width: 100%;
+    }
+
+    .up-side {
+        background: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .down-side {
+        background-color: white;
+        border-radius: 7px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .down-side ul li img {
+        max-width: 18px;
+        margin-right: 10px
+    }
+
+    .down-side ul {
+        list-style-type: none;
+    }
+
+    .down-side ul li {
+        margin-top: 6px;
+    }
+
+    .social-medias img {
+        max-width: 24px;
+        border-radius: 5px;
+        margin-right: 5px;
+
+    }
+
+
+    .profile-background {
+        background: url(../../../assets/pic/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-position 2s;
+        height: 200px;
+
+
+        background-clip: content-box;
+    }
+
+    .profile-background:hover {
+        background: url(../../../assets/pic/background2.jpg);
+        background-repeat: space;
+        background-size: cover;
+        background-clip: content-box;
+
+        height: 200px;
+        background-position: 10% 50%;
+
+    }
+</style>

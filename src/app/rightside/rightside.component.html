@@ -1,0 +1,59 @@
+<blockquote class="blockquote blockquote-custom bg-white p-4 shadow rounded" *ngFor="let x of dailyQuote">
+    <div class="p-image">
+        <img src="../../../assets/pic/quotes.png" />
+    </div>
+    <p class="mb-0 mt-2 font-italic" style="font-size: 16px;">"{{x.fields.summary}}"</p>
+
+    <footer class="blockquote-footer pt-3 mt-3 border-top">
+        <cite title="Source Title">{{x.fields.author}}</cite>
+    </footer>
+
+</blockquote>
+
+
+<div class="card" *ngFor="let x of allArticle">
+    <div class="card-header pb-0 pl-2 m-0">
+        <h5> Son Makale</h5>
+    </div>
+    <div class="card-body">
+        <h6 class="card-title">{{x.fields.title}}</h6>
+        <p class="card-text">{{x.fields.description}}</p>
+        <a routerLink="/article/{{x.sys.id}}" class="btn btn-dark">Devam et</a>
+    </div>
+</div>
+
+
+<style>
+    .last-article {
+        margin-top: 30px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0;
+        min-height: 250px;
+        color: #3c1900;
+    }
+
+    .card-body p {
+        font-size: 16px;
+    }
+
+    .blockquote-footer {
+        font-size: 14px;
+    }
+
+    .last-article a {
+        color: black;
+    }
+</style>
+
+
+
+<!--
+    üstte possitive relative 
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; -->

@@ -1,0 +1,62 @@
+<div class="portfolio" *ngFor="let x of portfolio">
+    <div class="card-body p-5">
+
+        <p class="card-text">İşletmenize uygun <b>web sitesi</b> veya <b>mobil uygulama</b> oluşturabilirim.
+            Daha
+            fazla
+            bilgi almak için mail gönderebilirsiniz ya da <a href="https://bionluk.com/furkanerdgn"
+                target="_blank">Bionluk</a> üzerinden teklif verebilirsiniz.</p>
+        <small>
+            <b>#Bootstrap,Html,Css,Javascript,React,Anguler,Django,React-native</b>
+        </small>
+        <ul>
+
+            <li><img src="../../assets/pic/check.png" height="22px">{{x.fields.text}}
+            </li>
+            <li><img src="../../assets/pic/check.png" height="22px">{{x.fields.text1}}
+            </li>
+            <li><img src="../../assets/pic/check.png" height="22px">{{x.fields.text2}}
+            </li>
+            <li><img src="../../assets/pic/check.png" height="22px">{{x.fields.text3}}
+            </li>
+
+        </ul>
+    </div>
+    <div class="responsiveContainer">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://{{x.fields.image.fields.file.url}}">
+                    <img src="{{x.fields.image.fields.file.url}}" width="600" height="400">
+                </a>
+                <div class="desc">{{x.fields.image.fields.title}}</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://{{x.fields.image2.fields.file.url}}">
+                    <img src="{{x.fields.image2.fields.file.url}}" width="600" height="400">
+                </a>
+                <div class="desc">{{x.fields.image2.fields.title}}</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://{{x.fields.image3.fields.file.url}}">
+                    <img src="{{x.fields.image3.fields.file.url}}" width="600" height="400">
+                </a>
+                <div class="desc">{{x.fields.image3.fields.title}}</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://{{x.fields.image1.fields.file.url}}">
+                    <img src="{{x.fields.image1.fields.file.url}}" width="600" height="400">
+                </a>
+                <div class="desc">{{x.fields.image1.fields.title}}</div>
+            </div>
+        </div>
+    </div>
+</div>
